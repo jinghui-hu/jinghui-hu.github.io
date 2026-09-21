@@ -11,6 +11,7 @@ In this repository, open **Settings → Pages**. Select **Deploy from a branch**
 - `index.html`: biography, research interests, selected publications, and contact details.
 - `styles.css`: typography, colours, responsive layout, and print styles.
 - `favicon.svg`: browser icon.
+- `assets/halftone-eye.svg`: decorative cobalt halftone illustration (scalable vector).
 - `.nojekyll`: serves the files directly without Jekyll processing.
 
 To preview locally, run `python3 -m http.server 8000` from this folder and open http://localhost:8000.
@@ -29,3 +30,7 @@ Sources checked on 15 September 2026:
 - https://scholar.google.com/citations?user=JxZD-V0AAAAJ
 
 Before publishing updates, check navigation, mail links, publication links, and layout on narrow and wide screens. The site has no JavaScript dependencies, tracking scripts, or remote font dependencies.
+
+## Design
+
+The September 2026 refresh implements the approved halftone editorial concept: bold typography, cobalt accents, vector dot artwork, thin rules, and publication rows. The layout adapts to mobile screens; background details use a native keyboard-accessible disclosure. The illustration is decorative and hidden from assistive technology. No JavaScript is required.

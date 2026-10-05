@@ -24,7 +24,7 @@ Figures are reproduced from the linked author manuscripts; selected panels are i
 
 | Asset | Selected figure | Source |
 | --- | --- | --- |
-| publications/eyehead-spectrum.webp | Figure 3(b): eye-mover and head-mover ends of the spectrum (PDF page 8) | [Manuscript](https://arxiv.org/pdf/2602.06164) |
+| publications/eyehead-population.webp | Figure 3(a): population mean and ±2 SD along the first functional principal component (91.1% variance explained). Complete panel extracted from page 8 of the published paper. | [Published paper](https://doi.org/10.1145/3772318.3791114) |
 | publications/lala-mapping.webp | Figure 1: gaze-to-rotation activation mapping (PDF page 3) | [Manuscript](https://arxiv.org/pdf/2608.30014) |
 | publications/neck-electrodes.webp | Figure 4: neck-muscle electrode placement (PDF page 8) | [Manuscript](https://www.florianweidner.de/content/paper/FRONTIERS2025-Li-EMGinVR.pdf) |
 | publications/lookup-interface.webp | Figure 1: head-and-gaze activation of command search (PDF page 1) | [Manuscript](https://www.pokristensson.com/pubs/HuEtAlISMAR2024.pdf) |

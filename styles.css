@@ -15,3 +15,10 @@
 .news-list p{font-size:15px;line-height:1.7;margin:0}
 @media(max-width:660px){.news-list li{grid-template-columns:68px minmax(0,1fr);gap:12px}.news-list p{font-size:14px}.news-list time{font-size:11px}}
 @media(max-height:780px) and (min-width:661px){.profile{position:static}}
+
+/* Keep the historical news archive available without crowding the homepage. */
+.news-source{font-size:12px;white-space:normal}
+.news-archive{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.news-archive summary{cursor:pointer;color:var(--blue);font-size:14px;font-weight:600;width:fit-content}
+.news-archive[open] summary{margin-bottom:22px}
+@media print{.news-archive{break-inside:auto}}

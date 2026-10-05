@@ -34,3 +34,16 @@ Remaining entries and CV sections follow the supplied CV. Student work is descri
 A compact profile sidebar and a readable main column replace the oversized hero. The cobalt halftone illustration and dotted fellowship accent retain the existing visual identity. Narrow screens stack the profile above the content. Native anchor links provide section and publication-year navigation; reduced-motion preferences and print layouts are supported.
 
 Before publishing, check internal anchors, local assets, author/title accuracy, publication links, keyboard focus, and desktop/mobile layout. GitHub Pages deploys commits to `main` automatically using the repository's existing Pages configuration.
+
+## News archive (5 October 2026)
+
+The latest updates appear above Publications. A native, keyboard-accessible disclosure holds the 2024–2025 archive. Keep new entries in reverse chronological order. Dates label the event year when the public LinkedIn view does not expose a reliable absolute post date; do not infer exact dates from relative labels.
+
+Four historical updates were added from public LinkedIn content: CHI 2026 Eye–Head Mover presentation, TOCHI publication (2025), 2025 graduation/Lancaster/Aarhus retrospective, and ISMAR 2024 LookUP presentation. The existing fellowship update links to the award announcement. The TOCHI announcement is visible within Qiushi Zhou's repost and is labelled accordingly. This is not a complete LinkedIn archive: the full profile activity is sign-in-gated, and only accessible public content has been incorporated.
+
+Sources:
+- lookup: https://www.linkedin.com/posts/jinghui-hu_feeling-incredibly-honored-to-have-presented-activity-7254697248507195393-JWq7
+- recap: https://www.linkedin.com/posts/jinghui-hu_academiclife-researchcommunity-hci-activity-7414225511595565056-tPxb
+- fellowship: https://www.linkedin.com/posts/jinghui-hu_embodiedinteraction-humanaiinteraction-activity-7467481425777242112-iHcP
+- chi: https://www.linkedin.com/posts/jinghui-hu_chi2026-hci-vr-activity-7451879831719317505-UB3T
+- tochi: https://www.linkedin.com/posts/qiushi-zhou-62b8039b_sensorimotor-regularities-as-alignment-between-activity-7406354784561049600-h96v

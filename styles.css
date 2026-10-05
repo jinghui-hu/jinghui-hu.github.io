@@ -22,3 +22,22 @@
 .news-archive summary{cursor:pointer;color:var(--blue);font-size:14px;font-weight:600;width:fit-content}
 .news-archive[open] summary{margin-bottom:22px}
 @media print{.news-archive{break-inside:auto}}
+
+/* Research figures and authentic event images, stored locally and lazy-loaded. */
+.publication.with-image{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;align-items:start}
+.publication-copy{min-width:0}
+.publication-image{display:flex;align-items:center;justify-content:center;width:100%;height:112px;background:#f7f8fb;border:1px solid var(--line);border-radius:6px;overflow:hidden;padding:6px}
+.publication-image img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.publication-image:hover{border-color:var(--blue)}
+.news-image{grid-column:2;margin:12px 0 0;max-width:230px;min-width:0}
+.news-image>a{display:flex;justify-content:center;align-items:center;background:#f7f8fb;border:1px solid var(--line);border-radius:6px;overflow:hidden;height:155px;padding:7px}
+.news-image img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.news-image figcaption{font-size:10px;line-height:1.6;color:var(--muted);margin-top:6px}
+.news-photo{max-width:440px}
+.news-photo>a{height:auto;padding:0}
+.news-photo img{width:100%;height:auto;max-height:none}
+.news-gallery{grid-column:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:490px}
+.news-gallery .news-image{grid-column:auto;max-width:none}
+@media(max-width:1100px) and (min-width:661px){.publication.with-image{grid-template-columns:110px minmax(0,1fr);gap:15px}.publication-image{height:94px}}
+@media(max-width:480px){.publication.with-image{grid-template-columns:1fr;gap:13px}.publication-image{max-width:210px;height:135px}.news-gallery{grid-template-columns:1fr;gap:4px}.news-gallery .news-image{max-width:230px}.news-image>a{height:140px}.news-photo>a{height:auto}}
+@media print{.publication-image{height:85px}.publication.with-image{grid-template-columns:110px minmax(0,1fr);gap:15px}.news-image,.news-gallery{break-inside:avoid}}

@@ -47,3 +47,13 @@ Sources:
 - fellowship: https://www.linkedin.com/posts/jinghui-hu_embodiedinteraction-humanaiinteraction-activity-7467481425777242112-iHcP
 - chi: https://www.linkedin.com/posts/jinghui-hu_chi2026-hci-vr-activity-7451879831719317505-UB3T
 - tochi: https://www.linkedin.com/posts/qiushi-zhou-62b8039b_sensorimotor-regularities-as-alignment-between-activity-7406354784561049600-h96v
+
+### Owner-supplied 2026 event updates (5 October 2026)
+
+Added January LMU Winter School at Söllerhaus; March GEMINI at IEEE VR; April HKUST (Guangzhou) visit and Free Rein forum; May CHI presentations and Dagstuhl seminar; and June ETRA presentations. The existing undated 2026 CHI news item was replaced with the owner's May date and the co-supervised student paper. Seven entries are grouped under “More from 2026” to keep the latest three updates prominent. Event months and attendance follow the owner's explicit account. Ben's surname and the Dagstuhl seminar title were not supplied and have not been guessed.
+
+The supplied event pages confirm the winter school programme and GEMINI keynotes by Shengdong Zhao and Ana Serrano:
+- https://www.hcilab.org/event/winterschool-2026/
+- https://sites.google.com/view/gemini-2026/previous-editions/2026-ieee-vr
+
+The GEMINI page contains a 2025 year typo in its schedule; the page's edition and the owner's account identify the event as IEEE VR 2026.

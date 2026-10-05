@@ -41,3 +41,11 @@
 @media(max-width:1100px) and (min-width:661px){.publication.with-image{grid-template-columns:110px minmax(0,1fr);gap:15px}.publication-image{height:94px}}
 @media(max-width:480px){.publication.with-image{grid-template-columns:1fr;gap:13px}.publication-image{max-width:210px;height:135px}.news-gallery{grid-template-columns:1fr;gap:4px}.news-gallery .news-image{max-width:230px}.news-image>a{height:140px}.news-photo>a{height:auto}}
 @media print{.publication-image{height:85px}.publication.with-image{grid-template-columns:110px minmax(0,1fr);gap:15px}.news-image,.news-gallery{break-inside:avoid}}
+
+/* Portrait with a cobalt halftone accent outside the photograph. */
+.profile-photo{position:relative;width:180px;height:180px;margin:0 0 26px;isolation:isolate}
+.profile-photo::before{content:"";position:absolute;inset:10px -10px -10px 10px;z-index:-1;border-radius:12px;background-image:radial-gradient(#254fc266 1px,transparent 1.4px);background-size:5px 5px}
+.profile-photo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+@media(max-width:850px){.profile-photo{width:150px;height:150px}}
+@media(max-width:660px){.profile-photo{float:right;width:106px;height:106px;margin:0 6px 18px 18px}.profile-photo::before{inset:6px -6px -6px 6px}}
+@media print{.profile-photo{display:none}}

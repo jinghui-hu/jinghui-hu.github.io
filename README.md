@@ -1,6 +1,6 @@
 # Jinghui Hu — Academic website
 
-Personal academic website at https://jinghui-hu.github.io/, served directly by GitHub Pages. No build step, packages, JavaScript, remote fonts, or tracking scripts are required.
+Personal academic website at https://jinghui-hu.github.io/, served directly by GitHub Pages. No build step or packages are required. All content works without JavaScript. Optional analytics is configured separately below.
 
 ## Edit
 
@@ -9,8 +9,39 @@ Personal academic website at https://jinghui-hu.github.io/, served directly by G
 - `assets/halftone-eye.svg`: decorative cobalt illustration.
 - `favicon.svg`: browser icon.
 - `.nojekyll`: bypasses Jekyll processing.
+- `analytics.js`: optional page-view collection, disabled until an owner-controlled account is configured.
 
 To preview locally, run `python3 -m http.server 8000` from this folder and open http://localhost:8000.
+
+## Private visitor analytics
+
+**Status: prepared, not active.** The `data-goatcounter` attribute in `index.html` is deliberately empty. No analytics script is downloaded and no visits are recorded until it contains the owner's verified collection endpoint. There is no historical visitor data to recover from this integration.
+
+GoatCounter provides a hosted dashboard for page views over time, countries/regions where available, and referring websites. The site remains on GitHub Pages. Reports live in the authenticated GoatCounter account; no reports, public counters, dashboard tokens, or credentials are stored in this public repository.
+
+### Connect the owner's account
+
+1. Create a free account at https://www.goatcounter.com/signup, or use an existing account controlled by Jinghui. Set the site domain to `jinghui-hu.github.io`.
+2. In the site's settings, set **Dashboard viewable by** to **Logged in users** only. Keep **Allow adding visitor counts on your website** disabled. Do not enable public access or access via a secret link, and do not add other users.
+3. Enable location and referrer collection. Country/region is inferred approximately from the visitor's network address; it does not identify visitors or their exact addresses. Keep individual page-view records disabled; aggregated statistics meet this site's needs.
+4. Copy the collection endpoint from the site's integration settings into the empty `data-goatcounter` attribute in `index.html`. Its form is `https://YOUR-ACCOUNT.goatcounter.com/count`. This endpoint is public by design and is not a password or API token. Never invent an account name or point this site at an account whose ownership is unverified.
+5. Before deployment, open the dashboard while signed out and confirm that it requires sign-in. Check that `/counter/TOTAL.json` and `/counter//.json` do not reveal statistics while signed out. These checks are required because report privacy is enforced by GoatCounter, not by hiding a link on this site.
+6. Publish the configured change to `main`, load the live website once, then confirm the new page view in the signed-in dashboard. Recheck the signed-out restrictions. Tracking starts at activation and cannot reconstruct earlier visits.
+
+The owner only needs to provide the dashboard's ordinary URL to finish setup; never share a password, API token, or secret-access URL. Account creation and private dashboard verification remain outstanding for this draft.
+
+### Collection behaviour
+
+- Counts real page loads on `https://jinghui-hu.github.io` only. Local previews and other hosts are excluded. Reloading counts again; totals are page views, not unique people. Section anchor clicks are not additional page views.
+- Sends only the page path and the referring website's origin. Query strings and fragments are omitted; `/index.html` is grouped with `/`. Referrer paths, search terms, and query parameters are not sent.
+- Respects Do Not Track and Global Privacy Control before loading the external script. GoatCounter also filters some bots and prerendered requests. Ad blockers, disabled JavaScript, and missing referrers can make totals and attribution incomplete.
+- Location statistics are supplied by GoatCounter. No browser location permission is requested. No visitor identity or precise location is collected by this integration.
+- To exclude your own browser's future visits after activation, open `https://jinghui-hu.github.io/#toggle-goatcounter` and follow GoatCounter's prompt. This preference applies separately to each browser and device.
+- To disable collection, empty `data-goatcounter` again and publish. Previously collected data remains in the private account until deleted there.
+
+Run the focused loader checks with `node --test tests/analytics.test.cjs`. Live ingestion and dashboard access control must be verified separately once the account exists.
+
+Provider documentation: [getting started](https://www.goatcounter.com/help/start), [JavaScript API](https://www.goatcounter.com/help/js), [dashboard access](https://www.goatcounter.com/help/frame), [public counter setting](https://www.goatcounter.com/help/visitor-counter), and [privacy](https://www.goatcounter.com/help/privacy).
 
 ## Publications
 

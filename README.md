@@ -64,3 +64,10 @@ The GEMINI page contains a 2025 year typo in its schedule; the page's edition an
 ## SUI 2026 award update (28 October 2026)
 
 Added NeckErgonomics to the 2026 publications and an October news item. The full award wording is “Best Paper Award – Honourable Mention”, as recorded on the first author’s publication page and certificate: https://thomas9190.github.io/guanlinli.github.io/publication/2026-10-10-neckergonomics-adapting-head-rotation. Bibliographic details and the direct published PDF are verified against https://eprints.gla.ac.uk/396719/ and DOI 10.1145/3822518.3830042. The site now lists 20 publications/reports and 16 direct PDF links. Existing entries and homepage paper selections are unchanged.
+
+
+## Animated previews
+
+Prefer genuine author GIFs or demo-video excerpts over static figures when available. Preserve existing figures when no suitable animation is available; never invent an animation of research results. Record the original source and excerpt in `assets/README.md`.
+
+`publication-media.js` progressively enhances four silent MP4 previews with play/pause buttons, visibility-based playback and reduced-motion/data-saver support. Videos use `preload="none"` and still posters. Visitors who prefer reduced motion see a still until they press Play; manually paused previews stay paused when scrolled back into view. Without JavaScript, native video controls remain available and the entire publication list works. Each preview has an accessible description, and full videos are linked alongside the PDF/Paper resources.

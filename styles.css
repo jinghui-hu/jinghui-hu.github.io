@@ -7,3 +7,13 @@
 
 /* Publication honours, with the full award category visible. */
 .paper-award{margin:0 0 14px;font-size:13px;line-height:1.6}.paper-award a{display:inline-block;color:#805a16;background:#fcf5e5;border:1px solid #e4d2a9;padding:3px 10px}.paper-award a:hover{text-decoration:underline}
+
+
+/* Genuine author animations and silent video excerpts. */
+.publication-media{margin:0;min-width:0;width:100%;max-width:310px}
+.publication-media video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#f8f9fb}
+.publication-media figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px;font-size:11px;color:var(--muted)}
+.publication-media button{font:inherit;color:#365b86;background:#fff;border:1px solid #aeb7c1;border-radius:2px;padding:5px 8px;cursor:pointer;min-height:32px}
+.publication-media button:hover{background:var(--soft);border-color:var(--blue)}
+.publication-media button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+@media print{.publication-media button{display:none}}

@@ -41,4 +41,18 @@ Figures are reproduced from the linked author manuscripts; selected panels are i
 
 Retained: `cursor.webp` (Figure 1, XR workstation illustration); `dominance.webp` (Figure 1(b), dominance by target location); `straingain.webp` (Figure 1, strain-aware pointing concept).
 
-No figure added to **Aligner, Nodder, and Winker**: the publisher full text could not be retrieved, and institutional records did not provide a downloadable manuscript. No figure added to **Perception Under Exertion**: a public report containing the contribution could not be located.
+At the 5 October figure pass, no figure was added to **Aligner, Nodder, and Winker**: the publisher full text could not be retrieved, and institutional records did not provide a downloadable manuscript. No figure added to **Perception Under Exertion**: a public report containing the contribution could not be located.
+
+
+## Animated publication previews (28 October 2026)
+
+Authentic author media, encoded as silent H.264 MP4 loops (640×360, 20 fps) with WebP still posters. No synthetic motion or research results were added. Full-video links appear with each paper.
+
+| Local asset prefix | Source | Excerpt |
+| --- | --- | --- |
+| `publications/neckergonomics-preview` | https://thomas9190.github.io/guanlinli.github.io/images/publication_figures/NeckErgonomics/1_head_pointing.gif | Complete 4-second head-pointing animation, poster at 1 second. |
+| `publications/lala-preview` | https://haopengwebsite.web.app/assets/video/LALA_Presentation_Video.mp4 | 6:45–7:05 alignment-task demonstration, poster at 6:55. Slide layout retained. |
+| `publications/aligner-preview` | https://haopengwebsite.web.app/assets/video/Aligner,nodder,winker%20Teaser%20Video.mp4 | 0:26–0:43 target-selection demonstration, poster at 0:27. |
+| `publications/straingain-preview` | https://haopengwebsite.web.app/assets/video/StrainGain%20Video%20Figure.mp4 | 0:06–0:24 cursor-comparison demonstration, poster at 0:07. |
+
+The Eye–Head Mover Spectrum, Cursor Warping, and Quantifying Neck Muscle Activity have verified author video links. Their existing figures remain because no suitable downloadable preview was obtained. In particular, the Eye–Head LinkedIn media request returned HTTP 403; its public post is linked instead. Remaining publications retain their selected research figures where usable animations were not found.

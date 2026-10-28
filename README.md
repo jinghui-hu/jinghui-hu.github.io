@@ -4,8 +4,9 @@ Personal academic website at https://jinghui-hu.github.io/, served directly by G
 
 ## Edit
 
-- `index.html`: profile, biography, research, publications, teaching, mentoring, education, experience, academic service, talks, media, and contact.
-- `styles.css`: responsive profile sidebar, typography, colours, halftone accents, and print styles.
+- `index.html`: profile, biography, research, selected publications, news, teaching, mentoring, education, experience, academic service, talks, media, and contact.
+- `publications/index.html`: the full publications page at `/publications/`, with 19 entries grouped by year and publication type.
+- `styles.css`: shared horizontal navigation, typography, responsive research rows, resource buttons, and print styles.
 - `assets/halftone-eye.svg`: decorative cobalt illustration.
 - `favicon.svg`: browser icon.
 - `.nojekyll`: bypasses Jekyll processing.
@@ -14,7 +15,7 @@ To preview locally, run `python3 -m http.server 8000` from this folder and open 
 
 ## Publications
 
-The page contains 19 publication and report entries, grouped into journal/conference publications by year and workshop papers/reports. Copy an `article.publication` block to add a paper. Preserve author order and highlight `Hu, J.` with `strong`. Use a DOI or public institutional record for the paper link and an open manuscript link where available. Identify adjunct and workshop venues accurately, and label accepted/in-press work explicitly. Do not describe submissions as accepted papers.
+The dedicated publications page contains 19 publication and report entries, grouped into journal/conference publications by year and workshop papers/reports. Copy an `article.publication` block in `publications/index.html` to add a paper; update the three selected homepage entries separately when appropriate. Preserve author order and highlight `Hu, J.` with `strong`. Use a DOI or public institutional record for the Paper link, and add a PDF button only for a confirmed direct PDF. Keep arXiv abstract pages labelled arXiv and repository records labelled Repository. Each resource link has a descriptive accessible name including its publication title. Identify adjunct and workshop venues accurately, and label accepted/in-press work explicitly. Do not describe submissions as accepted papers.
 
 ## Content provenance
 
@@ -31,9 +32,11 @@ Remaining entries and CV sections follow the supplied CV. Student work is descri
 
 ## Design and checks
 
-A compact profile sidebar and a readable main column replace the oversized hero. The cobalt halftone illustration and dotted fellowship accent retain the existing visual identity. Narrow screens stack the profile above the content. Native anchor links provide section and publication-year navigation; reduced-motion preferences and print layouts are supported.
+The October 2026 refresh follows the restrained academic layout of https://siplab.org/ and https://siplab.org/publications: a white background, muted blue links, simple horizontal navigation, year headings, generous spacing, large uncropped research figures, and small outlined resource buttons. The homepage retains the profile and all non-publication sections; three selected papers link to the full list. No external fonts or JavaScript are required.
 
-Before publishing, check internal anchors, local assets, author/title accuracy, publication links, keyboard focus, and desktop/mobile layout. GitHub Pages deploys commits to `main` automatically using the repository's existing Pages configuration.
+All 19 publication titles, author lists, venues, and existing figure choices are preserved. Fifteen direct PDF URLs were checked on 28 October 2026: each returned HTTP 200, a PDF content type, and a `%PDF-` file signature. Paper links remain for entries without a confirmed direct manuscript; no PDF is invented for the Dagstuhl report. Most PDF sources are documented in `assets/README.md`; the Seeing and Touching the Air PDF comes from the download link on its existing Cambridge repository record. These external links can change and should be rechecked periodically.
+
+Before publishing, check internal anchors, local assets, author/title accuracy, publication links, keyboard focus, and desktop/mobile layout. GitHub Pages deploys commits to `main` automatically using the repository's existing Pages configuration. The `/publications/` directory works directly on GitHub Pages; no routing or build step is required. Legacy home section/year anchors remain available.
 
 ## News archive (5 October 2026)
 

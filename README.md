@@ -5,7 +5,7 @@ Personal academic website at https://jinghui-hu.github.io/, served directly by G
 ## Edit
 
 - `index.html`: profile, biography, research, selected publications, news, teaching, mentoring, education, experience, academic service, talks, media, and contact.
-- `publications/index.html`: the full publications page at `/publications/`, with 19 entries grouped by year and publication type.
+- `publications/index.html`: the full publications page at `/publications/`, with 20 entries grouped by year and publication type.
 - `styles.css`: shared horizontal navigation, typography, responsive research rows, resource buttons, and print styles.
 - `assets/halftone-eye.svg`: decorative cobalt illustration.
 - `favicon.svg`: browser icon.
@@ -15,7 +15,7 @@ To preview locally, run `python3 -m http.server 8000` from this folder and open 
 
 ## Publications
 
-The dedicated publications page contains 19 publication and report entries, grouped into journal/conference publications by year and workshop papers/reports. Copy an `article.publication` block in `publications/index.html` to add a paper; update the three selected homepage entries separately when appropriate. Preserve author order and highlight `Hu, J.` with `strong`. Use a DOI or public institutional record for the Paper link, and add a PDF button only for a confirmed direct PDF. Keep arXiv abstract pages labelled arXiv and repository records labelled Repository. Each resource link has a descriptive accessible name including its publication title. Identify adjunct and workshop venues accurately, and label accepted/in-press work explicitly. Do not describe submissions as accepted papers.
+The dedicated publications page contains 20 publication and report entries, grouped into journal/conference publications by year and workshop papers/reports. Copy an `article.publication` block in `publications/index.html` to add a paper; update the three selected homepage entries separately when appropriate. Preserve author order and highlight `Hu, J.` with `strong`. Use a DOI or public institutional record for the Paper link, and add a PDF button only for a confirmed direct PDF. Keep arXiv abstract pages labelled arXiv and repository records labelled Repository. Each resource link has a descriptive accessible name including its publication title. Identify adjunct and workshop venues accurately, and label accepted/in-press work explicitly. Do not describe submissions as accepted papers.
 
 ## Content provenance
 
@@ -60,3 +60,7 @@ The supplied event pages confirm the winter school programme and GEMINI keynotes
 - https://sites.google.com/view/gemini-2026/previous-editions/2026-ieee-vr
 
 The GEMINI page contains a 2025 year typo in its schedule; the page's edition and the owner's account identify the event as IEEE VR 2026.
+
+## SUI 2026 award update (28 October 2026)
+
+Added NeckErgonomics to the 2026 publications and an October news item. The full award wording is “Best Paper Award – Honourable Mention”, as recorded on the first author’s publication page and certificate: https://thomas9190.github.io/guanlinli.github.io/publication/2026-10-10-neckergonomics-adapting-head-rotation. Bibliographic details and the direct published PDF are verified against https://eprints.gla.ac.uk/396719/ and DOI 10.1145/3822518.3830042. The site now lists 20 publications/reports and 16 direct PDF links. Existing entries and homepage paper selections are unchanged.
